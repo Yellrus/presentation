@@ -1,36 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<title>Shower Presentation Engine</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="node_modules/shower-ribbon/styles/styles.css">
 	<style>
-        .shower {
-            --slide-ratio: calc(16 / 9);
-        }
-    </style>
+		.shower {
+			--slide-ratio: calc(16 / 9);
+		}
+	</style>
 </head>
+
 <body class="shower list">
 
 	<header class="caption">
-		<h1>Shower Presentation Engine</h1>
-		<p>Yours Truly, Famous Inc.</p>
+		<h1>Методология</h1>
+		<p>Знать надо, без "б".</p>
 	</header>
 
 	<section class="slide" id="cover">
-		<h2>Shower Presentation Engine</h2>
-		<p>Brought to you by <a href="http://pepelsbey.net">Vadim Makeev</a></p>
 		<figure>
-			<img class="cover" src="pictures/cover.jpg" alt="Hands on the orange typewriter in a park">
-			<figcaption class="copyright right white">
-				<a href="http://fiftyfootshadows.net/">© John Carey</a>
-			</figcaption>
+			<img class="cover" src="pictures/girl.jpg" alt="girl mem">
 		</figure>
 		<style>
+			.col-center {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 100%;
+			}
+
+
+			.slide__img-wrap img {
+				max-width: 100%;
+				height: auto;
+			}
+
+			.slide code {
+				font-size: 14px;
+				font-weight: 500;
+				background-color: #f9f9f9;
+			}
+
+			.slide--big code {
+				font-size: 18px;
+				font-weight: 500;
+				background-color: #f9f9f9;
+			}
+
 			#cover h2 {
 				margin: 30px 0 0;
-				color: white;
+				color: #000;
 				text-align: center;
 				font-size: 70px;
 			}
@@ -50,59 +72,208 @@
 	</section>
 
 	<section class="slide">
-		<h2>Shower key features</h2>
-		<ol>
-			<li>Built on HTML, CSS and JavaScript</li>
-			<li>Works in all modern browsers</li>
-			<li>Themes are separated from engine</li>
-			<li>Fully keyboard accessible</li>
-			<li>Printable to PDF</li>
-		</ol>
-		<p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
+		<h2>Вода</h2>
+		<p>Инструменты, такие как препроцессоры и постпроцессоры, имеют большое значение для улучшения опыта разработки. Но одних
+			только этих инструментов недостаточно для решения проблемы хранения большего количества CSS в проекте. Чтобы решить эту
+			проблему, люди начали документировать разные рекомендации о том, как писать CSS, обычно называемые методологиями.</p>
 	</section>
 
-	<section class="slide">
-		<h2>Plain text on your slides</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.</p>
-	</section>
-
-	<section class="slide">
-		<h2>Two columns if you like</h2>
-		<div class="columns two">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-			<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-		</div>
-	</section>
-
-	<section class="slide">
-		<h2>All kind of lists</h2>
-		<ol>
-			<li>Simple lists are marked with bullets</li>
-			<li>Ordered lists begin with a number</li>
-			<li>You can even nest lists one inside another
-				<ul>
-					<li>Or mix their types</li>
-					<li>But do not go too far</li>
-					<li>Otherwise audience will be bored</li>
-				</ul>
-			</li>
-			<li>Look, seven rows exactly!</li>
-		</ol>
-	</section>
-
-	<section class="slide">
-		<h2>Serious citations</h2>
+	<section class="slide" id="cover">
+		<h2>Принципы написания</h2>
 		<figure>
-			<blockquote>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-			</blockquote>
-			<figcaption>Marcus Tullius Cicero</figcaption>
+			<img class="cover" src="pictures/serial-1.jpg" alt="Эпизод из сериал я робот">
 		</figure>
 	</section>
 
 	<section class="slide">
-		<h2>Code samples</h2>
-		<pre>
+		<h2>Принципы хорошей архитектуры</h2>
+		<ol>
+			<li>Предсказуемость</li>
+			<li>Повторное использование</li>
+			<li>Поддержка</li>
+			<li>Масштабируемость</li>
+		</ol>
+		<p class="note">Если мы в идеальном мире</p>
+	</section>
+
+	<section class="slide">
+		<h2>Предсказуемость</h2>
+		<p>Предсказуемость для CSS означает, что ваши правила ведут себя ожидаемо. Когда вы добавляете или изменяете какое-то правило,
+			оно не должно влиять на части сайта, которые вы не собирались менять. Это вряд ли необходимо маленьким сайтам, которые
+			редко изменяются, но для больших сайтов с десятками или сотнями страниц предсказуемый CSS необходим.</p>
+	</section>
+
+	<section class="slide">
+		<h2>Повторное использование</h2>
+		<div class="columns">
+			<p>CSS-правила должны быть достаточно абстрактны и независимы, чтобы можно было быстро создать новые компоненты из существующих
+				частей без необходимости что-то переписывать или снова бороться с уже решёнными проблемами.</p>
+		</div>
+	</section>
+
+	<section class="slide">
+		<h2>Поддержка</h2>
+		<p>Когда нужно добавить или изменить новые компоненты или возможности, это не должно приводить к рефакторингу существующего
+			CSS. Добавление компонента А на страницу не должно своим появлением ломать компонент Б.</p>
+	</section>
+
+	<section class="slide">
+		<h2>Масштабируемость</h2>
+		<p>Растущий в размерах и сложности сайт обычно требует для поддержки большего числа разработчиков. Масштабируемость для CSS
+			означает, что он с лёгкостью может поддерживаться как одним человеком, так и большой командой разработчиков. Также это
+			значит, что архитектура CSS вашего сайта достаточно доступна и не требует чрезмерных усилий для понимания. То, что вы
+			сегодня единственный разработчик, имеющий дело с CSS, не значит, что так будет всегда.</p>
+	</section>
+
+	<section class="slide">
+		<div class="columns">
+			<figure>
+				<img class="cover" src="pictures/error.jpg" alt="Эпизод из сериал я робот">
+			</figure>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div class="columns">
+			<h3>Изменение компонентов в зависимости от родителя</h3>
+			<pre>
+				<code><mark>&lt;div class="social-bar"&gt;</mark> <span class="comment">&lt;!--Виджет чего-либо--&gt;</span></code>
+				<code>    &lt;h2&gt;Заголовок&lt;/h2&gt;</code>
+				<code>    &lt;div&gt;Контент&lt;/div&gt;</code>
+				<code><mark>&lt;/div&gt;</mark></code>
+			</pre>
+			<a href="https://jsfiddle.net/Yellrus/nx5jdyzL/5/" target="_blank">Ссылка</a>
+		</div>
+	</section>
+
+
+	<section class="slide">
+		<h3>Слишком общие имена классов</h3>
+		<div class="columns">
+
+			<pre>
+				<code><mark>&lt;div class="social-bar"&gt;</mark> <span class="comment">&lt;!--Виджет чего-либо--&gt;</span></code>
+				<code>    &lt;h2.class="title"&gt;Заголовок&lt;/h2&gt;</code>
+				<code>    &lt;div.class="text"&gt;Контент&lt;/div&gt;</code>
+				<code><mark>&lt;/div&gt;</mark></code>
+				<code>
+				.social-bar {}
+				.social-bar .title {}
+				.social-bar .text {}
+			</code>
+			</pre>
+
+		</div>
+	</section>
+
+	<section class="slide">
+		<h3>Слишком сложные селекторы</h3>
+		<div class="columns">
+
+			<pre>
+				<code>#main-nav ul li ul li div</code>
+				<code>#content article h1:first-child </code>
+				<code>#sidebar > div > h3 + p { }</code>
+				<code>.body .nav div ul li</code>
+			</pre>
+
+		</div>
+	</section>
+
+	<section class="slide">
+		<h3>Слишком много правил для одного</h3>
+		<div class="columns">
+
+			<pre>
+			<code>.widget {
+				position: absolute;
+				top: 20px;
+				left: 20px;
+				background-color: red;
+				font-size: 1.5em;
+				text-transform: uppercase;
+				margin-top: -60px;
+				width: 200px;
+				}</code>
+			</pre>
+
+		</div>
+	</section>
+
+	<section class="slide">
+		<h3>Логическая структура в именах классов</h3>
+		<div class="columns">
+
+			<pre>
+				<code>
+						&lt;header class="site-header"&gt;
+							&lt;div class="logo">&lt;/div&gt;
+							&lt;div class="navigation">&lt;/div&gt;
+						&lt;/header&gt;
+				</code>
+
+				<code>
+						.site-header { … }
+						.logo { … }
+						.navigation { … }
+				</code>
+			</pre>
+
+		</div>
+	</section>
+
+	<section class="slide">
+		<h3>Логическая структура в именах классов</h3>
+		<div class="columns">
+
+			<pre>
+					<ol>
+						<li>
+							<code>
+								.site-header .logo { … }
+							</code>
+						</li>
+						<li class="next">
+							<code>
+								.site-header-logo-newyears { … }
+							</code>
+						</li>
+					</ol>
+				</pre>
+
+		</div>
+	</section>
+
+
+	<section class="slide" id="cover">
+		<figure>
+			<img class="cover" src="pictures/govno.png" alt="">
+		</figure>
+	</section>
+
+	<section class="slide" id="cover">
+		<figure>
+			<img class="cover" src="pictures/ser.jpg" alt="">
+		</figure>
+	</section>
+
+	<section class="slide" id="cover">
+		<figure>
+			<img class="cover" src="pictures/source.gif" alt="">
+		</figure>
+	</section>
+
+
+	<section class="slide">
+		<div class="col-center">
+			<h2>Методологии CSS &mdash; как хочу, так и делаю</h2>
+		</div>
+	</section> #}
+
+	<section class="slide">
+		<h2>OOCSS (Object Oriented CSS)</h2>
+		<img src="pictures/oocss.png" alt="oocss">
+		<!-- <pre>
 			<code>&lt;!DOCTYPE html&gt;</code>
 			<code class="mark">&lt;html lang="en"&gt;</code>
 			<code><mark>&lt;head&gt;</mark> <span class="comment">&lt;!--Comment--&gt;</span></code>
@@ -110,92 +281,525 @@
 			<code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
 			<code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
 			<code><mark>&lt;/head&gt;</mark></code>
+		</pre> -->
+	</section>
+
+	<section class="slide">
+		<h2>Основан на двух принципах:</h2>
+		<ol>
+			<li>Раздельная структура и оболочка (отделение "шкуры" от структуры) </li>
+			<li class="next">Это отдельный контейнер и контент(содержимое)</li>
+		</ol>
+		<div class="slide__img-wrap">
+			<img src="pictures/oocss-graph.png" alt="">
+		</div>
+	</section>
+
+	<section class="slide">
+		<h2>Пример:</h2>
+		<pre>
+			<code style="line-height: 1.5">
+				#widget {
+					width: 200px;
+					height: 50px;
+					<mark>border: solid 1px #ccc;
+					background: linear-gradient(#ccc, #222);
+					box-shadow: rgba(0, 0, 0, .5) 2px 2px 5px;</mark>
+				}
+
+				#box {
+					width: 400px;
+					overflow: hidden;
+					<mark>border: solid 1px #ccc;
+					background: linear-gradient(#ccc, #222);
+					box-shadow: rgba(0, 0, 0, .5) 2px 2px 5px;</mark>
+				}
+			</code>
+
 		</pre>
 	</section>
 
 	<section class="slide">
-		<h2>Even tables</h2>
-		<table>
-		<tr>
-			<th scope="col">Locavore</th>
-			<th>Umami</th>
-			<th>Helvetica</th>
-			<th>Vegan</th>
-		</tr>
-		<tr>
-			<th scope="row">Fingerstache</th>
-			<td>Kale</td>
-			<td>Chips</td>
-			<td>Keytar</td>
-		</tr>
-		<tr>
-			<th scope="row">Sriracha</th>
-			<td>Gluten-free</td>
-			<td>Ennui</td>
-			<td>Keffiyeh</td>
-		</tr>
-		<tr>
-			<th scope="row">Thundercats</th>
-			<td>Jean</td>
-			<td>Shorts</td>
-			<td>Biodiesel</td>
-		</tr>
-		<tr>
-			<th scope="row">Terry</th>
-			<td>Richardson</td>
-			<td>Swag</td>
-			<td>Blog</td>
-		</tr>
-		</table>
-		<p>It’s good to have information organized.</p>
+		<h2>Пример:</h2>
+		<pre>
+				<code style="line-height: 1.5">
+					.box {
+						width: 400px;
+						overflow: hidden;
+					}
+
+					.widget {
+						width: 500px;
+						min-height: 200px;
+						overflow: auto;
+					}
+
+					.skin {
+						border: solid 1px #ccc;
+						background: linear-gradient(#ccc, #222);
+						box-shadow: rgba(0, 0, 0, .5) 2px 2px 5px;
+					}
+				</code>
+
+			</pre>
 	</section>
 
 	<section class="slide" id="picture">
-		<h2>Pictures</h2>
-		<figure>
-			<img class="cover" src="pictures/picture.jpg" alt="Orange typewriter on a wooden table close-up">
-			<figcaption class="copyright right white">
-				<a href="http://fiftyfootshadows.net/">© John Carey</a>
-			</figcaption>
-		</figure>
-		<style>
-			#picture h2 {
-				color: white;
-			}
-		</style>
-	</section>
-
-	<section class="slide">
-		<h2 class="shout shrink">You can even shout this way</h2>
-	</section>
-
-	<section class="slide">
-		<h2>Inner navigation</h2>
+		<h2>Плюсы</h2>
 		<ol>
-			<li>Lets you reveal list items one by one</li>
-			<li class="next">To keep some key points</li>
-			<li class="next">In secret from audience</li>
-			<li class="next">But it will work only once</li>
-			<li class="next">Nobody wants to see the same joke twice</li>
+			<li>Нет определенных правил</li>
+			<li>Более быстрые страницы</li>
+			<li>Низкий порого вхождения</li>
+		</ol>
+		<h2>Минусы</h2>
+		<ol>
+			<li>Нет определенных правил</li>
+			<li>HTML обрастает классами</li>
+			<li>Отслеживание существующих модулей</li>
 		</ol>
 	</section>
 
-	<section class="slide" id="see-more">
-		<h2 class="shout">
-			<img src="pictures/logo.svg" alt="Shower logo">
-			<a href="https://github.com/shower/shower">See more on GitHub</a>
-		</h2>
+	<section class="slide">
+		<h2>SMACSS (Scalable and Modular Architecture for CSS)</h2>
+		<div class="slide__img-wrap">
+			<img src="pictures/smacs.png" alt="smacss">
+		</div>
+	</section>
+
+	<section class="slide" id="picture">
+		<h2>Разделение стилей на</h2>
+		<ol>
+			<li>Base rules — базовые стили</li>
+			<li class="next">Layout rules — стили макета</li>
+			<li class="next">Modules rules — стили модулей</li>
+			<li class="next">State rules — стили состояния</li>
+			<li class="next">Theme rules — оформление</li>
+		</ol>
+	</section>
+
+	<section class="slide">
+		<h2>Пример cтруктуры css:</h2>
+		<pre>
+					<code style="line-height: 1.5">
+							@import ‘_fonts’;
+
+							@import ‘_variables’;
+
+							@import ‘_base’;
+
+							@import ‘_layouts’;
+
+							@import ‘_modules’;
+
+							@import ‘_states’;
+
+
+							бывает отдельный файл media-query
+							@import ‘_media-query’;
+					</code>
+
+				</pre>
+	</section>
+
+	<section class="slide" id="picture">
+		<h2>Плюсы</h2>
+		<ol>
+			<li>Дополнительные уровни семантики</li>
+			<li>Управляемый код</li>
+			<li>Расширяемый код</li>
+			<li>Возможность повторного использования</li>
+		</ol>
+		<h2>Минусы</h2>
+		<ol>
+			<li>Сложнее для новичка</li>
+			<li>Нужно следовать правилам</li>
+		</ol>
+	</section>
+
+	<section class="slide">
+		<div class="columns">
+			<figure>
+				<img class="cover" src="pictures/atomic.jpg" alt="Atomic css">
+			</figure>
+		</div>
+	</section>
+
+	<section class="slide">
+		<h2>Atomic CSS — атомарный CSS</h2>
+		<p>При использовании такого подхода для каждого повторно используемого свойства должен быть сформирован отдельный класс. Пример:
+			стиль «margin-bottom: 10px» предполагает создание класса «mb-10», стиль «width: 200px» создание класса «w-200».
+		</p>
+
+		<pre>
+			<code><mark>&lt;div class="social-bar mb-10 pa-24 w-200"&gt;</mark> <span class="comment">&lt;!--Виджет чего-либо--&gt;</span></code>
+			<code>    &lt;h2&gt;Заголовок&lt;/h2&gt;</code>
+			<code>    &lt;div&gt;Контент&lt;/div&gt;</code>
+			<code><mark>&lt;/div&gt;</mark></code>
+		</pre>
+	</section>
+
+	<section class="slide" id="picture">
+		<h2>Короче говоря - повторное использование стилей</h2>
+		<ol>
+			<li>Разделение стилей</li>
+			<li>Один класс &mdash; одно свойство</li>
+			<li>Независимые классы</li>
+			<li>Каскада нет!</li>
+		</ol>
+	</section>
+
+	<section class="slide" id="picture">
+		<h2>Плюсы</h2>
+		<ol>
+			<li>Небольшой объём CSS</li>
+			<li>Легко вводить изменения</li>
+			<li>Возможность повторного использования</li>
+			<li>Каскада нет!</li>
+		</ol>
+
+		<h2>Плюсы</h2>
+		<ol>
+			<li>Загрязняет html</li>
+			<li>Семантика ?</li>
+		</ol>
+	</section>
+
+	<section class="slide">
+		<div class="columns">
+			<figure>
+				<img class="cover" src="pictures/cover-bem.png" alt="BEM">
+			</figure>
+		</div>
+	</section>
+
+
+	<section class="slide" id="vitaly-harisov">
+		<h2 class="place r">Виталий
+			<br/> Харисов</h2>
+		<figure>
+			<img class="cover" src="pictures/vitaly-harisov.jpg" alt="Виталий Харисов">
+		</figure>
 		<style>
-			#see-more h2 {
-				font-size: 100px
+			#vitaly-harisov h2 {
+				margin: 0 200px 0 0;
+				color: #515686;
+				font-size: 60px;
 			}
 
-			#see-more img {
-				width: 0.72em;
-				height: 0.72em;
+			.slide .place.r {
+				right: 0;
+				left: auto;
 			}
 		</style>
 	</section>
+
+	<section class="slide big">
+		<h2>БЭМ</h2>
+
+		<style>
+			.slide.big h2 {
+				position: absolute;
+				top: 50%;
+				left: 0;
+				width: 100%;
+				text-align: center;
+				line-height: 1;
+				font-size: 150px;
+				-webkit-transform: translateY(-50%);
+				-ms-transform: translateY(-50%);
+				transform: translateY(-50%);
+			}
+		</style>
+	</section>
+
+	<section class="slide big">
+		<h2>Блок Элемент Модификатор</h2>
+
+		<style>
+			.slide.big h2 {
+				position: absolute;
+				top: 50%;
+				left: 0;
+				width: 100%;
+				text-align: center;
+				line-height: 1;
+				font-size: 150px;
+				-webkit-transform: translateY(-50%);
+				-ms-transform: translateY(-50%);
+				transform: translateY(-50%);
+			}
+		</style>
+	</section>
+
+	<section class="slide big">
+		<h2>Блок</h2>
+		<p>Функционально независимый компонент страницы, который может быть повторно использован. В HTML блоки представлены атрибутом
+			class.
+		</p>
+
+		<style>
+			.slide.big h2 {
+				position: absolute;
+				top: 50%;
+				left: 0;
+				width: 100%;
+				text-align: center;
+				line-height: 1;
+				font-size: 150px;
+				-webkit-transform: translateY(-50%);
+				-ms-transform: translateY(-50%);
+				transform: translateY(-50%);
+			}
+		</style>
+	</section>
+
+	<section class="slide">
+		<h3>Особенности:</h3>
+		<ol>
+			<li>Название блока характеризует смысл («что это?» — «меню»: menu, «кнопка»: button), а не состояние («какой, как выглядит?»
+				— «красный»: red, «большой»: big).</li>
+			<li class="next">Блок не должен влиять на свое окружение</li>
+			<li class="next">В CSS по БЭМ также не рекомендуется использовать селекторы по тегам или id.</li>
+		</ol>
+	</section>
+
+	<section class="slide slide--big">
+		<h3>Пример:</h3>
+		<pre>
+					<span class="comment">&lt;!-- Верно. Семантически осмысленный блок `error` --&gt;</span>
+					<code>&lt;div class="error"&gt;&lt;/div&gt;</code>
+					<span class="comment">&lt;!-- Неверно. Описывается внешний вид --&gt;</span>
+					<code>&lt;div class="red-text"&gt;&lt;/div&gt;</code>
+		</pre>
+	</section>
+
+	<section class="slide slide--big">
+		<h3>Возможности блоков:</h3>
+		<p> - Блоки можно вкладывать друг в друга.</p>
+		<pre>
+			<code>&lt;div class="page-header"&gt;</code>
+				<code>	&lt;a class="logotype"&gt;&lt;/a&gt;</code>
+				<code>	&lt;div class="hero"&gt;</code>
+				<code> 		&lt;form class="search-form"&gt;&lt;/form&gt;</code>
+				<code>	&lt;/div&gt;</code>
+			<code>&lt;/div&gt;</code>
+		</pre>
+	</section>
+
+	<section class="slide big">
+		<h2>Элемент</h2>
+		<p>Составная часть блока, которая не может использоваться в отрыве от него.</p>
+
+		<style>
+			.slide.big h2 {
+				position: absolute;
+				top: 50%;
+				left: 0;
+				width: 100%;
+				text-align: center;
+				line-height: 1;
+				font-size: 150px;
+				-webkit-transform: translateY(-50%);
+				-ms-transform: translateY(-50%);
+				transform: translateY(-50%);
+			}
+		</style>
+	</section>
+
+	<section class="slide">
+		<h3>Особенности:</h3>
+		<ol>
+			<li>Название элемента характеризует смысл («что это?» — «пункт»: item, «текст»: text), а не состояние («какой, как выглядит?»
+				— «красный»: red, «большой»: big).</li>
+			<li>Структура полного имени элемента соответствует схеме: имя-блока__имя-элемента. Имя элемента отделяется от имени блока
+				двумя подчеркиваниями (__).</li>
+		</ol>
+	</section>
+
+	<section class="slide">
+		<h3>Пример:</h3>
+		<div class="columns">
+			<p style="font-size: 15px"> - Элемент не может находится вне своего блока.
+				<br/> - Элемент &mdash; необязательный компонент блока. Не у всех блоков должны быть элементы.</p>
+			<pre>
+				<code>&lt;form class="search"&gt;</code>
+				<code>	&lt;div class="search__inner"&gt;</code>
+				<code>		&lt;input class="search__input"&gt;&lt;/input&gt;</code>
+				<code> 		&lt;button class="search__btn btn" type="submit"&gt;Найти&lt;/button&gt;</code>
+				<code>		&lt;/div&gt;</code>
+				<code>	&lt;/div&gt;</code>
+				<code>&lt;/form&gt;</code>
+			</pre>
+		</div>
+	</section>
+
+	<section class="slide big">
+		<h2>Модификатор</h2>
+		<p>Cущность, определяющая внешний вид, состояние или поведение блока либо элемента.
+		</p>
+
+		<style>
+			.slide.big h2 {
+				position: absolute;
+				top: 50%;
+				left: 0;
+				width: 100%;
+				text-align: center;
+				line-height: 1;
+				font-size: 150px;
+				-webkit-transform: translateY(-50%);
+				-ms-transform: translateY(-50%);
+				transform: translateY(-50%);
+			}
+		</style>
+	</section>
+
+	<section class="slide">
+		<h3>Особенности:</h3>
+		<ol>
+			<li>Название модификатора характеризует внешний вид («какой размер?», «какая тема?» и т. п.), состояние, поведение</li>
+			<li>Имя модификатора отделяется от имени блока или элемента одним подчеркиванием (_).</li>
+		</ol>
+		<pre>
+			<code> &lt;button class="search__btn <mark>btn_disabled</mark>" type="submit"&gt;Найти&lt;/button&gt;</code>
+		</pre>
+	</section>
+
+	<section class="slide">
+		<h3>Типы модификаторов:</h3>
+		<ol>
+			<li>Булевый</li>
+			<li>Ключ-значение</li>
+		</ol>
+		<pre>
+			<code> &lt;button class="search__btn <mark>btn_disabled</mark> <mark>btn_size_xs</mark> <mark>btn_color_red</mark> <mark>btn_theme_newyear</mark>" type="submit"&gt;Найти&lt;/button&gt;</code>
+		</pre>
+	</section>
+
+	<section class="slide">
+		<figure>
+			<img class="cover" src="pictures/bem2.png" alt="Nicolas Gallagher">
+		</figure>
+	</section>
+
+	<section class="slide">
+		<h3>В его примере:</h3>
+		<pre>
+			<code>
+				.media {}
+				.media__img {}
+				.media__img--rev {}
+				.media__body {}
+			</code>
+		</pre>
+
+	</section>
+
+	<section class="slide">
+		<h3>Почему БЕМ</h3>
+		<ol>
+			<li>Позволяет создавать абсолютно независимые блоки. Блоки и элементы получают уникальные имена, так что стили для одного
+				элемента ничего не поломают в другом;</li>
+			<li>Помогает легко придумывать любое количество классов, не повторяющихся между собой;</li>
+			<li>БЭМ помогает писать самодокументирующийся код, в классе любого элемента содержится информация о нём.</li>
+		</ol>
+
+	</section>
+
+	<section class="slide">
+		<h3>Что не дает БЕМ</h3>
+		<ol>
+			<li>методология (никто не запретит вам сломать и нарушать);</li>
+			<li>изоляция присутствует, если придерживаться правил (но вы работаете с людьми, а они ошибаются; легко сломать);</li>
+			<li>WYSIWYG, работа с текстом (скорее всего ваш WYSIWYG надо будет настраивать или используйте каскад);</li>
+		</ol>
+
+		<a href="https://github.com/yoksel/common-words" target="_blank">Слова, часто используемые в CSS-классах</a>
+
+	</section>
+
+
+	<section class="slide big">
+		<h2>Миксы</h2>
+
+		<style>
+			.slide.big h2 {
+				position: absolute;
+				top: 50%;
+				left: 0;
+				width: 100%;
+				text-align: center;
+				line-height: 1;
+				font-size: 150px;
+				-webkit-transform: translateY(-50%);
+				-ms-transform: translateY(-50%);
+				transform: translateY(-50%);
+			}
+		</style>
+	</section>
+
+	<section class="slide big">
+		<h3>Миксы пример</h3>
+		<p style="font-size: 13px;">Прием, позволяющий использовать разные БЭМ-сущности на одном DOM-узле.</p>
+		<p style="font-size: 13px;">Cоздавать семантически новые компоненты интерфейса на основе имеющихся.</p>
+		<pre>
+			<code>&lt;header class="page-header"&gt;</code>
+				<code>	&lt;form class="search <mark>page-header__search</mark>"&gt;</code>
+				<code>		&lt;div class="search__inner"&gt;</code>
+				<code>			&lt;input class="search__input"&gt;&lt;/input&gt;</code>
+				<code> 			&lt;button class="search__btn btn" type="submit"&gt;Найти&lt;/button&gt;</code>
+				<code>			&lt;/div&gt;</code>
+				<code>		&lt;/div&gt;</code>
+				<code>	&lt;/form&gt;</code>
+				<code>&lt;/header&gt;</code>
+		</pre>
+	</section>
+
+	<section class="slide big">
+		<h2>CSS в JS</h2>
+
+		<style>
+			.slide.big h2 {
+				position: absolute;
+				top: 50%;
+				left: 0;
+				width: 100%;
+				text-align: center;
+				line-height: 1;
+				font-size: 150px;
+				-webkit-transform: translateY(-50%);
+				-ms-transform: translateY(-50%);
+				transform: translateY(-50%);
+			}
+		</style>
+	</section>
+
+	<section class="slide big">
+		<p>Был представлен в 2014 году как методология, организованная вокруг определения стилей CSS не в отдельном .css файле, а непосредственно
+				в каждом компоненте.</p>
+		<p>Цель методологии “CSS в JS”состоит в том, чтобы иметь возможность определять компоненты с жесткими границами, которые состоят из их собственного инкапсулированного HTML/CSS/JS, так что CSS в одном компоненте не имеет шансов повлиять на какие-либо другие компоненты.</p>
+
+	</section>
+
+	<section class="slide big">
+			<figure>
+					<img class="cover" src="pictures/bred.jpeg" alt="Bred Pit">
+				</figure>
+		</section>
+
+	<section class="slide">
+		<div class="super-center">
+		<img src="https://media.giphy.com/media/3oEdva9BUHPIs2SkGk/giphy.gif" alt="">
+		</div>
+		<style>
+			.super-center {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+		</style>
+	</section>
+
 
 	<footer class="badge">
 		<a href="https://github.com/shower/shower">Fork me on GitHub</a>
@@ -207,4 +811,5 @@
 	<!-- Copyright © 2018 Yours Truly, Famous Inc. -->
 
 </body>
+
 </html>
